@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    font-family: "Abel", serif;
+    font-style: normal;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.link:hover{
+    color: "#ff52525";
+}
+
+/* .MuiBadge-badge{
+background-color: '#ff52525' !important;
+} */
