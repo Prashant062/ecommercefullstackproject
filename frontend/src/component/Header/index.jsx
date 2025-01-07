@@ -8,7 +8,8 @@ import { IoGitCompareOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa6";
 import Tooltip from "@mui/material/Tooltip";
 // import Button from '@mui/material/Button';
-// import logo fro m "../../assets/logo.png"
+import logo from "../../assets/logo.png"
+import Navigation from "./Navigation";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -20,13 +21,13 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 const Header = () => {
   return (
-    <header>
+    <header className="bg-white">
       <div className="top-strip py-2 border-t-[1px] border-gray-300  border-b-[1px] ">
         <div className="container">
           <div className="flex items-center justify-between">
             <div className="col1 w-[50%]">
               <p className="text-[14px] font-[500]">
-                get up to 50% off new seasson styles, limited time only
+                 get up to 50% off new seasson styles, limited time only
               </p>
             </div>
             <div className="flex items-center justify-end">
@@ -53,10 +54,10 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="header">
-        <div className="container flex items-center justify-between border-[1px] ">
+      <div className="header py-4 border-b-[1px] border-gray-300">
+        <div className="container flex items-center justify-between ">
           <div className="col1 w-[25%]">
-            {/* <Link to={"/" }><img src={logo}/></Link> */}
+          <Link to={"/" } ><img src={logo} className=" h-[50px] w-[100px]"/></Link>
           </div>
 
           <div className="col2 w-[45%]">
@@ -74,7 +75,7 @@ const Header = () => {
                 </Link>{" "}
                 / &nbsp;
                 <Link
-                  to="login"
+                  to="register"
                   className="hover:text-    [#ff5252] transition text-[15px] font-[500]"
                 >
                   Register
@@ -124,6 +125,8 @@ const Header = () => {
           </div>
         </div>
       </div>
+
+      <Navigation/>
     </header>
   );
 };
